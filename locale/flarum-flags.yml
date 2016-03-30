@@ -27,7 +27,7 @@ flarum-flags:
       reason_inappropriate_label: Non apropiado
       reason_inappropriate_text: "Este post é ofensivo, abusivo, ou viola as <a>normas da comunidade</a>."
       reason_off_topic_label: "Fora de contexto"
-      reason_off_topic_text: Este post non é relevante na discusión actual e deberíase mover a outro lugar.
+      reason_off_topic_text: Este post non é relevante na conversa actual e deberíase mover a outro lugar.
       reason_other_label: Outro
       reason_spam_label: Spam
       reason_spam_text: Este é un post con publicidade.

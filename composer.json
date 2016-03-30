@@ -12,7 +12,7 @@
             "dev-master": "0.1.x-dev"
         },
         "flarum-extension": {
-            "title": "Galician",
+            "title": "Galego",
             "icon": {
                 "image": "icon.svg",
                 "backgroundColor": "#0099CC",
@@ -22,7 +22,7 @@
         },
         "flarum-locale": {
             "code": "gl",
-            "title": "Galician"
+            "title": "Galego"
         }
     }
 }
