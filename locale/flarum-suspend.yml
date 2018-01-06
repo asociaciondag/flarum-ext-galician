@@ -16,7 +16,7 @@ flarum-suspend:
 
     # These translations are used in the Suspend User modal dialog (admin function).
     suspend_user:
-      indefinitely_label: Suspendido indefinidamente Suspended indefinitely
+      indefinitely_label: Suspendido indefinidamente
       limited_time_label: Suspendido por un tempo limitado...
       limited_time_days_text: " días"
       not_suspended_label: Non suspendido

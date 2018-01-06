@@ -2,11 +2,13 @@ validation:
   accepted: "O :attribute debe estar aceptado."
   active_url: "O :attribute non é unha URL válida."
   after: "O :attribute debe ser unha data posterior a :date."
+  after_or_equal: "O :attribute debe ser unha data igual ou posterior a :date."
   alpha: "O :attribute solo pode conter letras."
   alpha_dash: "O :attribute solo pode conter letras, números e guións."
   alpha_num: "O :attribute solo pode conter letras e números."
   array: "O :attribute debe ser un array."
   before: "O :attribute debe ser unha data anterior a :date."
+  before_or_equal: "O :attribute debe ser unha data igual o u anterior a :date."
   between:
     numeric: "O :attribute debe estar entre :min e :max."
     file: "O :attribute debe pesar entre :min e :max kilobytes."
@@ -19,15 +21,19 @@ validation:
   different: "O :attribute e :other deben ser diferentes."
   digits: "O :attribute debe ter :digits díxitos."
   digits_between: "O :attribute debe ter entre :min e :max díxitos."
+  dimensions: "O :attribute ten unhas dimensións de imaxe non válidas."
   distinct: "O campo :attribute ten un valor duplicado."
   email: "O :attribute debe ser unha dirección de email válida."
   exists: "O :attribute seleccionado non é válido."
+  file: "O :attribute debe ser un arquivo."
   filled: "O campo :attribute é necesario."
   image: "O :attribute debe ser unha imaxe."
   in: "The :attribute seleccionado non é válido."
   in_array: "O campo :attribute non existe en :other."
   integer: "O :attribute debe ser un número enteiro."
   ip: "O :attribute debe ser unha dirección IP válida."
+  ipv4: "O :attribute debe ser unha dirección IPv4 válida."
+  ipv6: "O :attribute debe ser unha dirección IPv6 válida."
   json: "O :attribute debe ser un JSON válido."
   max:
     numeric: "O :attribute non pode ser maior que :max."
@@ -35,6 +41,7 @@ validation:
     string: "O :attribute non pode conter máis de :max caracteres."
     array: "O :attribute non pode conter máis de :max elementos."
   mimes: "O :attribute debe ser un arquivo de tipo: :values."
+  mimetypes: "O :attribute debe ser un arquivo de tipo: :values."
   min:
     numeric: "O :attribute debe ser como mínimo :min."
     file: "O :attribute debe pesar como mínimo :min kilobytes."
@@ -60,6 +67,7 @@ validation:
   string: "O :attribute debe ser unha cadea de texto."
   timezone: "O :attribute debe ser unha zona válida."
   unique: "O :attribute xa foi usado."
+  uploaded: "O :attribute fallou na subida."
   url: "O formato de :attribute non é válido."
 
   attributes:
@@ -70,7 +78,5 @@ validation:
     content: contido
     name_singular: nome singular
     name_plural: nome plural
-
-  custom:
-    username:
-      regex: "O nome de usuario solo pode conter letras, números e guións."
+    tag_count_primary: número de etiquetas primarias
+    tag_count_secondary: número de etiquetas secundarias

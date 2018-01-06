@@ -12,17 +12,25 @@ core:
       developer_text: "Se eres un desenvolvedor, podes <a>ler a documentación</a> para axudarche a facer as túas propias extensións."
       install_text: "Mentras tanto, podes buscar extensións na <a>web da comunidade Flarum</a> e instalalas manualmente usando Composer."
       temporary_text: "Un dia, non moi lonxe, dende aquí poderás engadir extensións ao teu foro fácilmente. Estamos construindo un ecosistema"
+      title: Engadir extensión
 
     # These translations are used in the Appearance page.
     appearance:
       colored_header_label: Cabeceira coloreada
       colors_heading: Cores
       colors_text: "Escolle dúas cores para usar na aparencia do teu foro. O primeiro usarase para resaltar cousas, e o segundo para darlle estilo aos elementos de fondo."
+      custom_header_heading: Custom Header
+      custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
       custom_styles_heading: Estilos personalizados
       custom_styles_text: Personaliza a aparencia do teu foro engadindo o teu propio código LESS/CSS para aplicalo encima dos estilos predeterminados de Flarum,
       dark_mode_label: Modo escuro
       edit_css_button: Editar o CSS personalizado
+      edit_header_button: Edit Custom Header
       enter_hex_message: Por favor, introduce a cor en formato hexadecimal.
+      favicon_heading: Favicon
+      favicon_text: Upload an image to be displayed as the forum's shortcut icon.
+      logo_heading: Logo
+      logo_text: Upload an image to be displayed in place of the forum title.
       submit_button: => core.ref.save_changes
 
     # These translations are used in the Basics page.
@@ -35,20 +43,14 @@ core:
       home_page_heading: Portada
       home_page_text: "Escolle a páxina que verán os usuarios por primeira vez cando visiten o teu foro. Se usas un valor personalizado, escribe a ruta relativa á raíz do foro."
       saved_message: Os teus cambios foron gardados.
+      show_language_selector_label: Show language selector
       submit_button: => core.ref.save_changes
       welcome_banner_heading: Banner de benvida
       welcome_banner_text: Configura o texto que se mostrará no banner na páxina de Todas as conversas. Úsao para darlle a benvida aos invitados ao teu foro.
 
     # These translations are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "Este <strong>software en beta</strong> proporciónase principalmente para que nos poidas axudar a probalo e melloralo; non se debería usar en producción."
-      contributing_text: "Queres buscar bugs e axudarnos? Le a <a>Documentación para contribucións</a>."
-      extension_text: "Estas interesado en desenvolver extensións? Le a <a>Documentación para extensións</a>."
-      features_text: "Tes unha idea para unha nova funcionalidade? Cóntanola usando <a>a etiqueta Features</a>."
-      support_text: "Atopaches un erro? Por favor, cóntanolo no noso foro, baixo a <a>etiqueta Support</a>."
-      troubleshooting_text: "Tes problemas? Sigue as instruccións na <a>documentación de problemas</a>."
-      version_text: "Grazas por probar Flarum! Estas usando a versión {version}."
-      welcome_text: "Benvido/a a Flarum Beta!"
+      help_link: Axuda
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
@@ -69,11 +71,31 @@ core:
       submit_button: => core.ref.save_changes
       title: Crear un grupo
 
+    # These translations are used in the Edit Custom Header modal dialog.
+    edit_header:
+      customize_text: "Engadir HTML para mostrar na parte superior da páxina, debaixo da cabeceira de Flarum."
+      submit_button: => core.ref.save_changes
+      title: Editar cabeceira personalizada
+
+    # These translations are used in the email page of the admin interface.
+    email:
+      account_heading: Conta SMTP
+      addresses_heading: Direccións
+      driver_label: Driver
+      encryption_label: Cifrado
+      from_label: Enviado por
+      heading: => core.ref.email
+      host_label: Host
+      password_label: => core.ref.password
+      port_label: Porto
+      server_heading: Servidor SMTP
+      submit_button: => core.ref.save_changes
+      text: Configura as opcións SMTP e direccións empregadas polo foro para enviar emails.
+      username_label: => core.ref.username
+
     # These translations are used in the Extensions page.
     extensions:
       add_button: Engadir extension
-      disable_button: Desactivar
-      enable_button: Activar
       settings_button: => core.ref.settings
       uninstall_button: Desinstalar
 
@@ -93,6 +115,8 @@ core:
       basics_text: "Define o título, idioma e outras configuracións básicas do teu foro."
       dashboard_button: Dashboard
       dashboard_text: O teu foro dunha ollada.
+      email_button: => core.ref.email
+      email_text: "Configura as opcións de email do foro."
       extensions_button: Extensións
       extensions_text: Engade funcionalidades ao teu foro para axustalo ás túas necesidades.
       permissions_button: Permisos
@@ -117,6 +141,8 @@ core:
       sign_up_label: Rexistrarse
       start_discussions_label: Comezar conversas
       view_discussions_label: Ver conversas
+      view_post_ips_label: Ver direccións IP dos posts
+      view_user_list_label: Ver lista de usuarios
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -133,13 +159,18 @@ core:
     settings:
       submit_button: => core.ref.save_changes
 
+     # These translations are used in image upload buttons.
+    upload_image:
+      remove_button: Eliminar
+      upload_button: Selecciona unha imaxe...
+
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used in the Change Email modal dialog.
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
-      confirm_password_label: Confirm Password
+      confirm_password_placeholder: => core.ref.confirm_password
       dismiss_button: => core.ref.okay
       incorrect_password_message: O contrasinal que meteches é incorrecto.
       submit_button: => core.ref.save_changes
@@ -157,6 +188,7 @@ core:
       exit_full_screen_tooltip: Saír da pantalla completa
       full_screen_tooltip: Pantalla completa
       minimize_tooltip: Minimizar
+      preview_tooltip: Previsualizar
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
@@ -180,12 +212,6 @@ core:
       submit_button: Enviar resposta
       view_button: Ver
 
-    # These translations are used in the Confirm Password modal dialog.
-    confirm_password:
-      password_placeholder: => core.ref.password
-      submit_button: => core.ref.confirm_password
-      title: => core.ref.confirm_password
-
     # These translations are used by the discussion control buttons.
     discussion_controls:
       cannot_reply_button: Non podes responder
@@ -195,7 +221,6 @@ core:
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: Loguéate para responder
       rename_button: Renomear
-      rename_text: "Escribe un novo título para esta conversa:"
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
@@ -209,9 +234,16 @@ core:
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
+      activate_button: Activar usuario
+      email_heading: => core.ref.email
       email_label: => core.ref.email
+      groups_heading: Grupos
+      password_heading: => core.ref.password
       password_label: => core.ref.password
+      set_password_label: Nova contrasinal
       submit_button: => core.ref.save_changes
+      title: Editar usuario
+      username_heading: => core.ref.username
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
@@ -219,6 +251,7 @@ core:
       dismiss_button: => core.ref.okay
       email_placeholder: => core.ref.email
       email_sent_message: Enviámosche un email que contén unha ligazón para resetear o teu contrasinal. Comproba o teu cartafol de spam se non o recibiches nos próximos 1-2 minutos.
+      not_found_message: Non hai ningún usuario rexistrado con ese email.
       submit_button: Recuperar contrasinal
       text: Escribe a túa dirección de correo electrónico e enviarémosche unha ligazón para resetear o teu contrasinal
       title: Esquecinme do contrasinal
@@ -226,6 +259,7 @@ core:
     # These translations are used in the header and session dropdown menu.
     header:
       admin_button: Administración
+      back_to_index_tooltip: Volver ao listado de conversas
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Perfil
@@ -252,10 +286,10 @@ core:
 
     # These translations are used in the Log In modal dialog.
     log_in:
-      confirmation_required_message: "Precisas confirmarnos o teu email antes de loguearte. Enviámosche un email de confirmación a {email}. Se non che chega pronto, comproba o teu cartafol de spam."
       forgot_password_link: "Esqueciches o contrasinal?"
       invalid_login_message: Os teus datos non son correctos.
       password_placeholder: => core.ref.password
+      remember_me_label: Lembrarme para a seguinte vez
       sign_up_text: "Non tes unha conta? <a>Rexístrate</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -271,6 +305,7 @@ core:
 
     # These translations are used by tooltips displayed for individual posts.
     post:
+      edited_text: Editado
       edited_tooltip: "{username} editou {ago}"
       number_tooltip: "Post #{number}"
 
@@ -290,10 +325,16 @@ core:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
+      discussion_renamed_old_tooltip: 'O título anterior era: "{old}"'
       discussion_renamed_text: "{username} cambiou o título de {old} a {new}."
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} despois"
+
+    # These translations are used by the rename discussion modal.
+    rename_discussion:
+      title: Renomear conversa
+      submit_button: => core.ref.rename
 
     # These translations are used by the search results dropdown list.
     search:
@@ -316,7 +357,6 @@ core:
 
     # These translations are used in the Sign Up modal dialog.
     sign_up:
-      confirmation_message: => core.ref.confirmation_email_sent
       email_placeholder: => core.ref.email
       dismiss_button: => core.ref.okay
       log_in_text: "Xa tes unha conta? <a>Loguéate</a>"
@@ -330,13 +370,13 @@ core:
     user:
       avatar_remove_button: Eliminar
       avatar_upload_button: Subir
-      bio_placeholder: Escribe algo sobre ti
+      avatar_upload_tooltip: Subir un novo avatar
       discussions_link: => core.ref.discussions
       in_discussion_text: "En {discussion}"
       joined_date_text: "Uniuse {ago}"
       online_text: Online
       posts_load_more_button: => core.ref.load_more
-      posts_link: Posts
+      posts_link: => core.ref.posts
       settings_link: => core.ref.settings
 
     # These translations are found on the user profile page (admin function).
@@ -381,19 +421,56 @@ core:
       three_text: "{first}, {second}, e {third}"
       two_text: "{first} e {second}"
 
-  # Translations in this namespace are used in basic HTML interface.
-  basic:
-    javascript_disabled_message: Esta web vese mellor en navegadores modernos co JavaScript activado.
-    load_error_message: Houbo un erro intentado cargar a versión completa desta web.
-    loading_text: Cargando...
-    next_page_button: Páxina seguinte
-    previous_page_button: Páxina anterior
+  # Translations in this namespace are used in views other than Flarum's normal JS client.
+  views:
+
+    # Translations in this namespace are displayed by the basic HTML content loader.
+    content:
+      javascript_disabled_message: Este sitio web vese mellor nun navegador moderno con javascript activado.
+      load_error_message: Algo malo pasou intentando cargar esta páxina. Recarga o teu navegador para intentar correxir o erro.
+      loading_text: Cargando...
+
+    # Translations in this namespace are displayed in the basic HTML discussion view.
+    discussion:
+      next_page_button: => core.ref.next_page
+      previous_page_button: Páxina anterior
+
+    # Translations in this namespace are displayed when Flarum encounters an error.
+    error:
+      403_message: Non tes permiso para acceder a esta páxina.
+      404_message: A páxina que intentas acceder non existe.
+      404_return_link: "Volver a {forum}"
+      500_message: Ocorreu un erro intentando cargar esta páxina.
+      503_message: "{forum} esta en mantemento. Grazas pola túa paciencia!"
+
+    # Translations in this namespace are displayed by the basic HTML discussion index.
+    index:
+      all_discussions_heading: => core.ref.all_discussions
+      next_page_button: => core.ref.next_page
+
+    # Translations in this namespace are displayed by the Log Out confirmation interface.
+    log_out:
+      log_out_button: => core.ref.log_out
+      log_out_confirmation: "Estas seguro de que queres pechar a sesión de {forum}?"
+      title: => core.ref.log_out
+
+    # Translations in this namespace are displayed by the Reset Password interface.
+    reset_password:
+      confirm_password_label: Confirmar a nova contrasinal
+      new_password_label: Nova contrasinal
+      submit_button: => core.ref.save_changes
+      title: => core.ref.reset_your_password
+
+  # Translations in this namespace are used in messages output by the API.
+  api:
+    invalid_username_message: "O nome de usuario solo pode conter letras, números e guións."
 
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
     # These translations are used in emails sent when users register new accounts.
     activate_account:
+      subject: Activa a túa conta
       body: |
         Boas {username}!
 
@@ -407,6 +484,7 @@ core:
 
     # These translations are used in emails sent when users change their email address.
     confirm_email:
+      subject: Confirma o teu email
       body: |
         Boas {username}!
 
@@ -420,6 +498,7 @@ core:
 
     # These translations are used in emails sent when users ask to reset their passwords.
     reset_password:
+      subject: => core.ref.reset_your_password
       body: |
         Boas {username}!
 
@@ -454,6 +533,8 @@ core:
     notifications: Notificacións
     okay: OK                                     # Referenced by flarum-tags.yml
     password: Contrasinal
+    posts: Posts                                 # Referenced by flarum-statistics.yml
+    rename: Renomear
     reply: Responder                                 # Referenced by flarum-mentions.yml
     restore: Restaurar
     save_changes: Gardar cambios                   # Referenced by flarum-suspend.yml, flarum-tags.yml
